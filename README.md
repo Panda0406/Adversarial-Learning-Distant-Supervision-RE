@@ -1,6 +1,6 @@
-# DSGAN: Generative Adversarial Training for Distant Supervision Relation Extraction
+# Robust Distant Supervision Relation Extraction via Deep Reinforcement Learning
 
-PyTorch implementation of the Adversarial Training for Distant Supervision Relation Extraction model described in our ACL 2018 paper [DSGAN: Generative Adversarial Training for Distant Supervision Relation Extraction(https://arxiv.org/abs/1805.09927). In this work, we define a Generator to find the true positive instances for relation extraction, and a Discriminator to do adversarial learning to robust the Generator. The core idea is assigning opposite labels to the instances predicted by Generator, to train the Discriminator; the optimal epoch is obtained until the performance of Discrinimator has the largest drop.
+PyTorch implementation of the Reinforcement Learning for Distant Supervision RE model described in our ACL 2018 paper [Robust Distant Supervision Relation Extraction via Deep Reinforcement Learning](https://arxiv.org/abs/1805.09927). In this work, we try to use reinforcement learning method to detect and remove noise instances for each relation type; moreover, this process is independent to the traning of relation extraction system.
 
 ## Steps to run the experiments
 
@@ -8,11 +8,9 @@ PyTorch implementation of the Adversarial Training for Distant Supervision Relat
 * ``Python 2.7.12 ``
 * ``PyTorch 0.4.1``
 * ``panda 0.19.1``
-* ``sklearn 0.19.1``
 
 ### Datasets and word embeddings
-* Dataset and Pretrained word embeddings are from [OpenNRE](https://github.com/thunlp/OpenNRE). Please download and put in into this directory.
-* https://pan.baidu.com/s/1WBJs0Ta7vj-D5Mcy0X_OWQ
+* [Dataset and Pretrained word embeddings](https://pan.baidu.com/s/1RT6bBtqzsJg4WfBCBvqw4g) are from [OpenNRE](https://github.com/thunlp/OpenNRE). Please download and put it into this directory. 
 * We include two versions of training dataset; they have different size, ``522611`` sentences and ``570088`` sentences repectively. This two options are included in ``args.py``. Compared with ``570088`` version, ``522611`` version removes entity pairs that are repetitive with test dataset. ``522611`` is the default options in ``args.py``.
 
 ### Training
@@ -33,10 +31,10 @@ PyTorch implementation of the Adversarial Training for Distant Supervision Relat
 
 ### Reference
 ```
-@article{qin2018dsgan,
-  title={DSGAN: Generative Adversarial Training for Distant Supervision Relation Extraction},
+@article{qin2018robust,
+  title={Robust Distant Supervision Relation Extraction via Deep Reinforcement Learning},
   author={Qin, Pengda and Xu, Weiran and Wang, William Yang},
-  journal={arXiv preprint arXiv:1805.09929},
+  journal={arXiv preprint arXiv:1805.09927},
   year={2018}
 }
 ```
