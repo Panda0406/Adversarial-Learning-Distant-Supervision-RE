@@ -11,7 +11,7 @@ PyTorch implementation of the Adversarial Training for Distant Supervision Relat
 * ``sklearn 0.19.1``
 
 ### Datasets and word embeddings
-* [Dataset and Pretrained word embeddings](https://pan.baidu.com/s/1WBJs0Ta7vj-D5Mcy0X_OWQ) are from [OpenNRE](https://github.com/thunlp/OpenNRE). Please download and put in into this directory.
+* [Dataset and Pretrained word embeddings] are from [OpenNRE](https://github.com/thunlp/OpenNRE). Please download([Baidu Yun](https://pan.baidu.com/s/1WBJs0Ta7vj-D5Mcy0X_OWQ) or [Google Drive](https://drive.google.com/file/d/1cQcMmMstZwxQRMne2M62Ca-xZZsmBxbH/view?usp=sharing)) and put in into this directory.
 * We include two versions of training dataset; they have different size, ``522611`` sentences and ``570088`` sentences repectively. This two options are included in ``args.py``. Compared with ``570088`` version, ``522611`` version removes entity pairs that are repetitive with test dataset. ``522611`` is the default options in ``args.py``.
 
 ### Training
