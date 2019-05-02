@@ -1,6 +1,6 @@
 # DSGAN: Generative Adversarial Training for Distant Supervision Relation Extraction
 
-PyTorch implementation of the Adversarial Training for Distant Supervision Relation Extraction model described in our ACL 2018 paper [DSGAN: Generative Adversarial Training for Distant Supervision Relation Extraction](https://arxiv.org/abs/1805.09927). In this work, we define a Generator to find the true positive instances for relation extraction, and a Discriminator to do adversarial learning to robust the Generator. The core idea is assigning opposite labels to the instances predicted by Generator, to train the Discriminator; the optimal epoch is obtained until the performance of Discrinimator has the largest drop.
+PyTorch implementation of the Adversarial Training for Distant Supervision Relation Extraction model described in our ACL 2018 paper [DSGAN: Generative Adversarial Training for Distant Supervision Relation Extraction](https://aclweb.org/anthology/P18-1046). In this work, we define a Generator to find the true positive instances for relation extraction, and a Discriminator to do adversarial learning to robust the Generator. The core idea is assigning opposite labels to the instances predicted by Generator, to train the Discriminator; the optimal epoch is obtained until the performance of Discrinimator has the largest drop.
 
 ## Steps to run the experiments
 
